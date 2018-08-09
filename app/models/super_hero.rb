@@ -7,13 +7,15 @@ class Superhero
     @name = args[:name]
     @power = args[:power]
     @bio = args[:bio]
-    @@superheroes << self 
-  end 
+    @@superheroes << self
+  end
 
-  def self.all 
+  def self.all
     @@superheroes
-  end 
-  
-    
+  end
+
+  def self.clear
+    @@superheroes = []
+
 
 end
